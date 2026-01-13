@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <meta name="description" content="Portfólio de Mateus Alcantara — Estudante de TI • Machine Learning • Web" />
+  <title>Mateus Alcantara | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body>
+  <div class="glow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand" id="brand" role="link" tabindex="0" aria-label="Voltar ao topo">
+        <span class="dot"></span>
+        <span>Mateus Alcantara</span>
+      </div>
+
+      <div class="nav-right">
+        <nav class="links" aria-label="Navegação">
+          <a href="#about" data-i18n="nav_about">Sobre</a>
+          <a href="#education" data-i18n="nav_edu">Formação</a>
+          <a href="#projects" data-i18n="nav_projects">Projetos</a>
+          <a href="#skills" data-i18n="nav_skills">Stack</a>
+          <a href="#experience" data-i18n="nav_exp">Experiência</a>
+          <a href="#contact" data-i18n="nav_contact">Contato</a>
+        </nav>
+
+        <!-- Language -->
+        <button class="icon-btn" id="langBtn" aria-label="Alternar idioma">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M3 12h18" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 3a15 15 0 0 1 0 18" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 3a15 15 0 0 0 0 18" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+
+        <!-- Theme -->
+        <button class="icon-btn" id="themeBtn" aria-label="Alternar tema claro/escuro">
+          <svg class="icon" id="themeIcon" viewBox="0 0 24 24" fill="none"></svg>
+        </button>
+
+        <!-- Mobile -->
+        <button class="icon-btn hamburger" id="menuBtn" aria-label="Abrir menu">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="menu" id="menu">
+        <a href="#about" data-i18n="nav_about">Sobre</a>
+        <a href="#education" data-i18n="nav_edu">Formação</a>
+        <a href="#projects" data-i18n="nav_projects">Projetos</a>
+        <a href="#skills" data-i18n="nav_skills">Stack</a>
+        <a href="#experience" data-i18n="nav_exp">Experiência</a>
+        <a href="#contact" data-i18n="nav_contact">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top" class="container">
+    <section class="band" aria-label="Hero">
+      <div class="hero-grid">
+        <div class="panel hero-left reveal">
+          <div class="kicker"><span class="spark"></span><span data-i18n="hero_kicker">Estudante de TI • Machine Learning • Web</span></div>
+          <h1 data-i18n="hero_title">
+            Projetos reais com <span class="accent">IA e Web</span><br/>com foco em impacto.
+          </h1>
+          <p class="lead" data-i18n="hero_lead">
+            Sou Mateus Alcantara, formado no Técnico em Desenvolvimento de Sistemas pelo SENAI.
+            Estudei minha vida toda no SESI e hoje sou graduando em Análise e Desenvolvimento de Sistemas na Faculdade SENAI (UNISENAI).
+            Busco minha primeira oportunidade em TI (estágio).
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact" data-i18n="cta_talk">Vamos conversar</a>
+            <a class="btn" href="https://github.com/MateusAlcantara13" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/mateusalcantara13/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="mailto:mateus.alcsil0612@gmail.com" data-i18n="cta_email">Email</a>
+            <a class="btn" href="https://wa.me/5511967025459" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+
+          <div class="stats" aria-label="Destaques">
+            <div class="stat">
+              <b data-i18n="stat1_t">Foco</b>
+              <span data-i18n="stat1_s">Machine Learning • IA • Computer Vision (em evolução)</span>
+            </div>
+            <div class="stat">
+              <b data-i18n="stat2_t">Stack</b>
+              <span data-i18n="stat2_s">JavaScript • React • Node • MySQL • TensorFlow.js • Python</span>
+            </div>
+            <div class="stat">
+              <b data-i18n="stat3_t">Objetivo</b>
+              <span data-i18n="stat3_s">Primeira oportunidade em TI (Estágio / Trainee)</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel hero-right reveal">
+          <div class="photo" aria-label="Foto principal">
+            <!-- Caminho da sua foto principal -->
+            <img src="assets/fotos/fotoMateus.jpeg" alt="Foto de Mateus Alcantara">
+            <div class="chip"><i></i><span data-i18n="chip_loc">São Paulo • Brasil</span></div>
+          </div>
+
+          <div class="quick" aria-label="Resumo">
+            <div class="row">
+              <div class="k" data-i18n="q1_k">Formação</div>
+              <div class="v" data-i18n="q1_v">Técnico SENAI • ADS UNISENAI</div>
+            </div>
+            <div class="row">
+              <div class="k" data-i18n="q2_k">Interesses</div>
+              <div class="v" data-i18n="q2_v">IA • ML • TensorFlow</div>
+            </div>
+            <div class="row">
+              <div class="k" data-i18n="q3_k">Disponível para</div>
+              <div class="v" data-i18n="q3_v">Estágio em TI</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="band alt">
+      <div class="split">
+        <div class="media reveal" aria-label="Foto em apresentação">
+          <!-- ✅ Caminho para sua foto na apresentação -->
+          <img src="assets/fotos/fotoMateus2.jpeg" alt="Mateus em apresentação">
+          <div class="caption" data-i18n="about_caption">Apresentações, projetos e evolução consistente.</div>
+        </div>
+
+        <div class="copy reveal">
+          <div class="kicker"><span class="spark"></span><span data-i18n="about_kicker">Sobre</span></div>
+          <h2 data-i18n="about_title">Direto ao ponto: quem eu sou e como eu trabalho</h2>
+          <p class="lead" style="margin-top:10px" data-i18n="about_text">
+            Sou estudante de TI com foco em Machine Learning e desenvolvimento web. Estou evoluindo em Python para ML e aprofundando em TensorFlow (Python e JavaScript),
+            sempre com projetos práticos e publicáveis.
+          </p>
+
+          <div class="stackline">
+            <span class="pill" data-i18n="about_p1">Aprendizado rápido</span>
+            <span class="pill" data-i18n="about_p2">Projetos reais</span>
+            <span class="pill" data-i18n="about_p3">Atenção a produto</span>
+            <span class="pill" data-i18n="about_p4">Impacto social</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="band">
+      <div class="reveal">
+        <div class="kicker"><span class="spark"></span><span data-i18n="edu_kicker">Formação</span></div>
+        <h2 style="margin-top:10px" data-i18n="edu_title">Trajetória acadêmica</h2>
+        <p class="lead" style="margin-top:10px" data-i18n="edu_text">
+          Construí minha base no SESI, concluí o Técnico em Desenvolvimento de Sistemas pelo SENAI e hoje curso Análise e Desenvolvimento de Sistemas na Faculdade SENAI (UNISENAI).
+        </p>
+      </div>
+
+      <div class="grid2">
+        <div class="card reveal">
+          <p><b data-i18n="edu1_title">SESI</b></p>
+          <ul class="clean">
+            <li data-i18n="edu1_l1">Formação escolar completa</li>
+            <li data-i18n="edu1_l2">Base sólida e disciplina de estudos</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <p><b data-i18n="edu2_title">SENAI • UNISENAI</b></p>
+          <ul class="clean">
+            <li data-i18n="edu2_l1">Técnico em Desenvolvimento de Sistemas (SENAI)</li>
+            <li data-i18n="edu2_l2">Graduando em Análise e Desenvolvimento de Sistemas (Faculdade SENAI — UNISENAI)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="band">
+      <div class="reveal">
+        <div class="kicker"><span class="spark"></span><span data-i18n="proj_kicker">Projetos</span></div>
+        <h2 style="margin-top:10px" data-i18n="proj_title">Demonstrações publicadas e repositórios</h2>
+        <p class="lead" style="margin-top:10px" data-i18n="proj_text">
+          Prints reais deixam a vitrine mais forte. Abaixo estão os cards com espaço para você inserir as imagens.
+        </p>
+      </div>
+
+      <div class="projects">
+        <!-- VisionCash -->
+        <article class="project reveal">
+          <div class="thumb" aria-label="Print VisionCash">
+            <!-- ✅ Caminho do print do projeto -->
+            <img src="assets/fotos/fotoCash.jpg" alt="VisionCash - print do projeto">
+          </div>
+          <div class="project-body">
+            <h3 data-i18n="p1_title">VisionCash — Reconhecimento de cédulas</h3>
+            <p data-i18n="p1_text">
+              Projeto de acessibilidade com IA para auxiliar pessoas com deficiência visual no reconhecimento de cédulas usando TensorFlow.js.
+            </p>
+            <div class="mini">
+              <span>JavaScript</span><span>TensorFlow.js</span><span data-i18n="tag_access">Acessibilidade</span><span>ML</span>
+            </div>
+            <div class="actions">
+              <a href="https://github.com/MateusAlcantara13/visioncash" target="_blank" rel="noreferrer" data-i18n="btn_code">Código</a>
+              <a href="https://visioncashpage.netlify.app/" target="_blank" rel="noreferrer" data-i18n="btn_live">Site</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Zero7 -->
+        <article class="project reveal">
+          <div class="thumb" aria-label="Print Zero7">
+            <img src="assets/fotos/fotoHamburger.jpg" alt="Zero7 Hamburgueria - print do projeto">
+          </div>
+          <div class="project-body">
+            <h3>Zero7 Hamburgueria</h3>
+            <p data-i18n="p2_text">
+              Site institucional com cardápio digital interativo, responsivo e com foco em performance.
+            </p>
+            <div class="mini">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span data-i18n="tag_resp">Responsivo</span>
+            </div>
+            <div class="actions">
+              <a href="https://github.com/MateusAlcantara13/zero7" target="_blank" rel="noreferrer" data-i18n="btn_code">Código</a>
+              <a href="https://zero7hamburgueria.netlify.app" target="_blank" rel="noreferrer" data-i18n="btn_live">Site</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Associação Promessas -->
+        <article class="project reveal">
+          <div class="thumb" aria-label="Print Associação Promessas">
+            <img src="assets/fotos/fotoPromessas.jpg" alt="Associação Promessas - print do projeto">
+          </div>
+          <div class="project-body">
+            <h3 data-i18n="p3_title">Associação Promessas</h3>
+            <p data-i18n="p3_text">
+              Site institucional para ONG com foco em clareza, impacto social, SEO e boa experiência mobile.
+            </p>
+            <div class="mini">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SEO</span>
+            </div>
+            <div class="actions">
+              <a href="https://github.com/MateusAlcantara13/associacao-promessas-landing" target="_blank" rel="noreferrer" data-i18n="btn_code">Código</a>
+              <a href="https://associacaopromessas.com.br/" target="_blank" rel="noreferrer" data-i18n="btn_live">Site</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PlantCare -->
+        <article class="project reveal">
+          <div class="thumb" aria-label="Print PlantCare">
+            <img src="assets/fotos/fotoPlanta.jpg" alt="PlantCare - print do projeto">
+          </div>
+          <div class="project-body">
+            <h3>PlantCare</h3>
+            <p data-i18n="p4_text">
+              Plataforma sobre cuidados com plantas com layout clean, amigável e totalmente responsivo.
+            </p>
+            <div class="mini">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span data-i18n="tag_ui">UI</span>
+            </div>
+            <div class="actions">
+              <a href="https://github.com/MateusAlcantara13/plantcare-website" target="_blank" rel="noreferrer" data-i18n="btn_code">Código</a>
+              <a href="https://plantcare-page.netlify.app" target="_blank" rel="noreferrer" data-i18n="btn_live">Site</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="band alt">
+      <div class="split reverse">
+        <div class="media reveal" aria-label="Imagem da seção Stack">
+          <!-- ✅ Caminho para imagem da seção stack -->
+          <img src="assets/fotos/fotoStacks.jpg" alt="Stack e ferramentas">
+          <div class="caption" data-i18n="skills_caption">Tecnologias com projetos publicados e aprendizado contínuo.</div>
+        </div>
+
+        <div class="copy reveal">
+          <div class="kicker"><span class="spark"></span><span data-i18n="skills_kicker">Stack</span></div>
+          <h2 data-i18n="skills_title">Tecnologias e ferramentas</h2>
+          <p class="lead" style="margin-top:10px" data-i18n="skills_text">
+            Organizo minha evolução por projetos. Meu foco atual é consolidar Machine Learning com Python e TensorFlow, mantendo base forte em web.
+          </p>
+
+          <div class="stacktags" aria-label="Tecnologias">
+            <span class="tag"><i></i> JavaScript</span>
+            <span class="tag"><i></i> React</span>
+            <span class="tag"><i></i> Node.js</span>
+            <span class="tag"><i></i> MySQL</span>
+            <span class="tag"><i></i> PHP</span>
+            <span class="tag"><i></i> HTML</span>
+            <span class="tag"><i></i> CSS</span>
+            <span class="tag"><i></i> TensorFlow.js</span>
+            <span class="tag"><i></i> Python</span>
+            <span class="tag"><i></i> Git & GitHub</span>
+            <span class="tag"><i></i> Trello</span>
+            <span class="tag"><i></i> Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="band">
+      <div class="reveal">
+        <div class="kicker"><span class="spark"></span><span data-i18n="exp_kicker">Experiência</span></div>
+        <h2 style="margin-top:10px" data-i18n="exp_title">Soft skills que sustentam performance</h2>
+        <p class="lead" style="margin-top:10px" data-i18n="exp_text">
+          Minha experiência como garçom fortaleceu comunicação, responsabilidade e trabalho sob pressão — competências importantes em times de tecnologia.
+        </p>
+      </div>
+
+      <div class="grid2">
+        <div class="card reveal">
+          <p><b data-i18n="exp1_title">Garçom (atual)</b></p>
+          <ul class="clean">
+            <li data-i18n="exp1_l1">Comunicação clara e empatia no atendimento</li>
+            <li data-i18n="exp1_l2">Organização e foco sob pressão</li>
+            <li data-i18n="exp1_l3">Trabalho em equipe e disciplina</li>
+            <li data-i18n="exp1_l4">Entrega com consistência</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <p><b data-i18n="exp2_title">Formação</b></p>
+          <ul class="clean">
+            <li data-i18n="exp2_l1">Técnico em Desenvolvimento de Sistemas — SENAI</li>
+            <li data-i18n="exp2_l2">Graduação em ADS — Faculdade SENAI (UNISENAI)</li>
+            <li data-i18n="exp2_l3">Base escolar completa — SESI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="band alt">
+      <div class="contact-grid">
+        <div class="card reveal">
+          <div class="kicker"><span class="spark"></span><span data-i18n="ct_kicker">Contato</span></div>
+          <h2 style="margin-top:10px" data-i18n="ct_title">Aberto para estágio e projetos</h2>
+          <p class="lead" style="margin-top:10px" data-i18n="ct_text">
+            Se você busca alguém com energia de aprendizado, projetos reais e vontade de crescer com a empresa, vamos conversar.
+          </p>
+
+          <div class="hero-actions" style="margin-top:16px">
+            <a class="btn primary" href="mailto:mateus.alcsil0612@gmail.com" data-i18n="cta_email">Email</a>
+            <a class="btn" href="https://www.linkedin.com/in/mateusalcantara13/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://github.com/MateusAlcantara13" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://wa.me/5511967025459" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <p class="lead" style="margin:0">
+            <b style="color:var(--text)" data-i18n="quote_title">Mensagem para recrutadores</b><br/>
+            <span data-i18n="quote_text">“Não procuro atalhos — busco evolução constante e a chance de provar meu valor através da prática.”</span>
+          </p>
+          <div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:10px">
+            <span class="pill" data-i18n="pill_intern">Estágio</span>
+            <span class="pill">IA / ML</span>
+            <span class="pill">Web</span>
+            <span class="pill" data-i18n="pill_impact">Impacto social</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> • Mateus Alcantara
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
